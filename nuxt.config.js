@@ -15,20 +15,26 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'YouTube - Video Platform',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Sample Description' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  loading: {
+    color: '#000000',
+    height: '3px',
+    duration: 3000,
+  },
   /*
   ** Global CSS
   */
   css: [
+    '~assets/css/style.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -58,6 +64,10 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+
+  router: {
+    middleware: ['ua']
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

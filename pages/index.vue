@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <iframe
       width="560"
       height="315"
@@ -9,7 +9,8 @@
       allowfullscreen
     />
 
-    <nuxt-link to="/contact">Contact Me</nuxt-link>
+    <nuxt-link :to="{ path: '/my-ip', query: { abc: 123 }}">Contact Me</nuxt-link>
+    <nuxt-link :to="{ path: '/secure', query: { abc: 123 }}">Contact Me</nuxt-link>
   </div>
 </template>
 

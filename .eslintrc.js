@@ -25,6 +25,7 @@ module.exports = {
     "space-before-function-paren": "off",
     "no-console": "off",
     "comma-dangle": "off",
+    "indent": "off",
     "arrow-parens": "off",
     "no-multiple-empty-lines": "off",
     "vue/no-v-html": "off"
