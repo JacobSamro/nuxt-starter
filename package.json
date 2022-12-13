@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
